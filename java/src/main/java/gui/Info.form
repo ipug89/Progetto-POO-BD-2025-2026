@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.Info">
+  <grid id="27dc6" binding="infoPanel" layout-manager="GridLayoutManager" row-count="10" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="12" vgap="12">
+    <margin top="15" left="15" bottom="15" right="15"/>
+    <constraints>
+      <xy x="20" y="20" width="937" height="500"/>
+    </constraints>
+    <properties>
+      <background color="-14869219"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="fed54" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="32" style="1"/>
+          <foreground color="-1601248"/>
+          <horizontalAlignment value="0"/>
+          <text value="⚡ HUB CONTROL FLOTTA"/>
+        </properties>
+      </component>
+      <component id="9494" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <foreground color="-1"/>
+          <text value="Veicoli Disponibili"/>
+        </properties>
+      </component>
+      <component id="d1764" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <foreground color="-1"/>
+          <text value="Caratteristiche Specifiche"/>
+        </properties>
+      </component>
+      <hspacer id="2978e">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="755fa">
+        <constraints>
+          <grid row="1" column="0" row-span="8" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="1fcf8">
+        <constraints>
+          <grid row="1" column="6" row-span="8" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="8ecc6" class="javax.swing.JList" binding="listaVeicoliDisponibili">
+        <constraints>
+          <grid row="2" column="2" row-span="4" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="180" height="150"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-13421773"/>
+          <font size="13" style="1"/>
+          <foreground color="-1"/>
+        </properties>
+      </component>
+      <component id="10894" class="javax.swing.JRadioButton" binding="autoRadioButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="3" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14869219"/>
+          <font style="1"/>
+          <foreground color="-1601248"/>
+          <selected value="true"/>
+          <text value="Auto"/>
+        </properties>
+      </component>
+      <component id="5215c" class="javax.swing.JRadioButton" binding="furgoniRadioButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="3" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14869219"/>
+          <font style="1"/>
+          <foreground color="-1601248"/>
+          <text value="Furgoni"/>
+        </properties>
+      </component>
+      <vspacer id="f1a48">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="2ee9c" class="javax.swing.JButton" binding="aggiungiVeicoloButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Aggiungi Veicolo"/>
+        </properties>
+      </component>
+      <component id="d7b5c" class="javax.swing.JButton" binding="rimuoviVeicoloButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-12369085"/>
+          <enabled value="false"/>
+          <foreground color="-2545863"/>
+          <text value="Rimuovi Veicolo"/>
+        </properties>
+      </component>
+      <component id="9567b" class="javax.swing.JButton" binding="noleggiaButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1601248"/>
+          <enabled value="false"/>
+          <font style="1"/>
+          <foreground color="-16777216"/>
+          <text value="NOLEGGIA ORA"/>
+        </properties>
+      </component>
+      <component id="e499" class="javax.swing.JButton" binding="visualizzaNoleggiButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Visualizza Noleggi"/>
+        </properties>
+      </component>
+      <vspacer id="73021">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="6" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="c22fc" class="javax.swing.JButton" binding="tornaAllaHomeButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="2"/>
+          <foreground color="-16777216"/>
+          <text value="Esci / Home"/>
+        </properties>
+      </component>
+      <component id="42e46" class="javax.swing.JLabel" binding="marcaField">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="d6f0f" class="javax.swing.JLabel" binding="modelloField">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="fbb4e" class="javax.swing.JLabel" binding="targaField">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14"/>
+          <foreground color="-4473925"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="7d645" class="javax.swing.JLabel" binding="kmField">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14"/>
+          <foreground color="-4473925"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="beb4b" class="javax.swing.JLabel" binding="marcaLabel">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <foreground color="-398337"/>
+          <text value="Marca:"/>
+        </properties>
+      </component>
+      <component id="6a7a4" class="javax.swing.JLabel" binding="modelloLabel">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <foreground color="-398337"/>
+          <text value="Modello:"/>
+        </properties>
+      </component>
+      <component id="4d066" class="javax.swing.JLabel" binding="targaLabel">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <foreground color="-398337"/>
+          <text value="Targa:"/>
+        </properties>
+      </component>
+      <component id="2d34" class="javax.swing.JLabel" binding="kmLabel">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <foreground color="-398337"/>
+          <text value="Chilometri:"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

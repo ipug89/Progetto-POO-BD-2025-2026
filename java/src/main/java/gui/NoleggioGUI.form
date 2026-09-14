@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.NoleggioGUI">
+  <grid id="27dc6" binding="noleggioPanel" layout-manager="GridLayoutManager" row-count="3" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="12" vgap="12">
+    <margin top="15" left="15" bottom="15" right="15"/>
+    <constraints>
+      <xy x="20" y="20" width="948" height="536"/>
+    </constraints>
+    <properties>
+      <background color="-14869219"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="47c0f" binding="jPanelSx" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="10">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13421773"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="bf1f4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="15" style="1"/>
+              <foreground color="-1601248"/>
+              <text value="Stai noleggiando il veicolo:"/>
+            </properties>
+          </component>
+          <component id="f3047" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-398337"/>
+              <text value="Targa:"/>
+            </properties>
+          </component>
+          <component id="979b5" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-398337"/>
+              <text value="Marca:"/>
+            </properties>
+          </component>
+          <component id="90eab" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-398337"/>
+              <text value="Modello:"/>
+            </properties>
+          </component>
+          <component id="7a521" class="javax.swing.JLabel" binding="labelTarga">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font style="1"/>
+              <foreground color="-1"/>
+              <text value="targaSelezionata"/>
+            </properties>
+          </component>
+          <component id="1ee36" class="javax.swing.JLabel" binding="labelMarca">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font style="1"/>
+              <foreground color="-1"/>
+              <text value="marcaSelezionata"/>
+            </properties>
+          </component>
+          <component id="6cb50" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-398337"/>
+              <text value="Data fine [GG/MM/AAAA]:"/>
+            </properties>
+          </component>
+          <component id="89c91" class="javax.swing.JLabel" binding="labelModello">
+            <constraints>
+              <grid row="3" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font style="1"/>
+              <foreground color="-1"/>
+              <text value="modelloSelezionato"/>
+            </properties>
+          </component>
+          <component id="35e7" class="javax.swing.JTextField" binding="campoDataInizio">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-398337"/>
+            </properties>
+          </component>
+          <component id="b594d" class="javax.swing.JTextField" binding="campoDataFinePrevista">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-398337"/>
+              <caretColor color="-398337"/>
+              <focusable value="true"/>
+              <foreground color="-16777216"/>
+              <selectedTextColor color="-16777216"/>
+            </properties>
+          </component>
+          <component id="413" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-398337"/>
+              <text value="Data inizio: [GG/MM/AAAA]"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="a2e33" binding="jPanelDx" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+        <margin top="10" left="15" bottom="10" right="15"/>
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13421773"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="6c59b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="20" style="0"/>
+              <foreground color="-1601248"/>
+              <text value="DATI CLIENTE"/>
+            </properties>
+          </component>
+          <component id="4d1f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="Nome"/>
+            </properties>
+          </component>
+          <component id="764e8" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="Cognome"/>
+            </properties>
+          </component>
+          <component id="2697d" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="Cod. Fiscale"/>
+            </properties>
+          </component>
+          <component id="8b46f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="N. Patente"/>
+            </properties>
+          </component>
+          <component id="ea241" class="javax.swing.JTextField" binding="campoNomeNoleggio">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="26"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-131587"/>
+              <caretColor color="-1"/>
+              <foreground color="-16777216"/>
+              <selectedTextColor color="-16777216"/>
+            </properties>
+          </component>
+          <component id="f02c5" class="javax.swing.JTextField" binding="campoCognomeNoleggio">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="26"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <caretColor color="-1"/>
+              <foreground color="-16777216"/>
+              <selectedTextColor color="-16777216"/>
+            </properties>
+          </component>
+          <component id="48a19" class="javax.swing.JTextField" binding="campoCdfNoleggio">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="26"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <caretColor color="-1"/>
+              <foreground color="-16777216"/>
+              <selectedTextColor color="-16777216"/>
+            </properties>
+          </component>
+          <component id="73142" class="javax.swing.JTextField" binding="campoNPatenteNoleggio">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="26"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <caretColor color="-1"/>
+              <foreground color="-16777216"/>
+              <selectedTextColor color="-16777216"/>
+            </properties>
+          </component>
+          <component id="e762e" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="Tipo Patente"/>
+            </properties>
+          </component>
+          <component id="c16e" class="javax.swing.JComboBox" binding="tipoPatenteNoleggio">
+            <constraints>
+              <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <editable value="false"/>
+              <foreground color="-16777216"/>
+              <model>
+                <item value="auto"/>
+                <item value="furgone"/>
+              </model>
+            </properties>
+          </component>
+          <component id="18fac" class="javax.swing.JTextField" binding="campoScadenzaPatente">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1774081"/>
+              <foreground color="-16777216"/>
+            </properties>
+          </component>
+          <component id="8a067" class="javax.swing.JTextField" binding="campoEmailNoleggio">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-398337"/>
+            </properties>
+          </component>
+          <component id="a0751" class="javax.swing.JTextField" binding="campoTelefonoNoleggio">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-398337"/>
+              <caretColor color="-16777216"/>
+            </properties>
+          </component>
+          <component id="c9483" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-398337"/>
+              <text value="Data scadenza patente"/>
+            </properties>
+          </component>
+          <component id="607af" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-398337"/>
+              <text value="Email"/>
+            </properties>
+          </component>
+          <component id="451a5" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-398337"/>
+              <text value="Telefono"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="5254a" class="javax.swing.JButton" binding="confermaNoleggioButton">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="8" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1601248"/>
+          <font style="1"/>
+          <foreground color="-16777216"/>
+          <text value="CONFERMA"/>
+        </properties>
+      </component>
+      <component id="b38dc" class="javax.swing.JButton" binding="noleggioHomeButton">
+        <constraints>
+          <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-12369085"/>
+          <font size="11" style="2"/>
+          <foreground color="-16777216"/>
+          <text value="Annulla"/>
+        </properties>
+      </component>
+      <component id="eb172" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="9" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="48" style="1"/>
+          <foreground color="-1"/>
+          <text value="NOLEGGIO"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

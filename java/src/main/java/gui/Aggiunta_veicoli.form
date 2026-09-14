@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.Aggiunta_veicoli">
+  <grid id="27dc6" binding="aggiuntaPanel" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="15" vgap="14">
+    <margin top="25" left="25" bottom="25" right="25"/>
+    <constraints>
+      <xy x="20" y="20" width="750" height="516"/>
+    </constraints>
+    <properties>
+      <background color="-16777216"/>
+      <foreground color="-16777216"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="fc0e7" class="javax.swing.JLabel" binding="titolo">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="36" style="1"/>
+          <foreground color="-1601248"/>
+          <text value="INSERIMENTO NUOVA AUTO"/>
+        </properties>
+      </component>
+      <component id="72ab9" class="javax.swing.JLabel" binding="labelTipologia">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <foreground color="-1"/>
+          <text value="Tipologia Veicolo:"/>
+        </properties>
+      </component>
+      <component id="73e9a" class="javax.swing.JComboBox" binding="comboTipologia">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Auto"/>
+            <item value="Furgone"/>
+          </model>
+        </properties>
+      </component>
+      <component id="f04f2" class="javax.swing.JLabel" binding="labelMarca">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="Marca:"/>
+        </properties>
+      </component>
+      <component id="4861d" class="javax.swing.JTextField" binding="textMarca">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="7d2b0" class="javax.swing.JLabel" binding="labelModello">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="Modello:"/>
+        </properties>
+      </component>
+      <component id="20235" class="javax.swing.JTextField" binding="modelloTextField">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="d2909" class="javax.swing.JLabel" binding="labelTarga">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="Targa:"/>
+        </properties>
+      </component>
+      <component id="e7274" class="javax.swing.JTextField" binding="textTarga">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="c17bf" class="javax.swing.JLabel" binding="labelKm">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="Chilometri:"/>
+        </properties>
+      </component>
+      <component id="d615d" class="javax.swing.JTextField" binding="chilometriTextField">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="a45ef" class="javax.swing.JLabel" binding="labelTariffa">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="Tariffa Noleggio (€):"/>
+        </properties>
+      </component>
+      <component id="b8153" class="javax.swing.JTextField" binding="textTariffa">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="specSectionLabel" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="13" style="1"/>
+          <foreground color="-1601248"/>
+          <text value="🔧 Caratteristiche specifiche per tipologia"/>
+        </properties>
+      </component>
+      <component id="6061d" class="javax.swing.JLabel" binding="labelPosti">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="N. Posti:"/>
+        </properties>
+      </component>
+      <component id="aae36" class="javax.swing.JTextField" binding="nPostiTextField">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="35cb1" class="javax.swing.JLabel" binding="labelPorte">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="N. Porte:"/>
+        </properties>
+      </component>
+      <component id="ec65e" class="javax.swing.JTextField" binding="nPorteTextField">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="6c2fd" class="javax.swing.JLabel" binding="labelCategoria">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="Categoria:"/>
+        </properties>
+      </component>
+      <component id="a4946" class="javax.swing.JComboBox" binding="comboCategoria">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Utilitaria"/>
+            <item value="Berlina"/>
+            <item value="Station Wagon"/>
+            <item value="SUV"/>
+            <item value="Cabriolet"/>
+            <item value="Mini"/>
+          </model>
+        </properties>
+      </component>
+      <component id="62f9b" class="javax.swing.JLabel" binding="labelCapacita">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="Capacità (Kg):"/>
+        </properties>
+      </component>
+      <component id="a566b" class="javax.swing.JTextField" binding="capacitaTextField">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="6d708" class="javax.swing.JLabel" binding="labelVolume">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="Volume (m³):"/>
+        </properties>
+      </component>
+      <component id="2931c" class="javax.swing.JTextField" binding="volumeTextField">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="90c07" class="javax.swing.JLabel" binding="labelAltezza">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="Altezza (cm):"/>
+        </properties>
+      </component>
+      <component id="2ea38" class="javax.swing.JTextField" binding="altezzaTextField">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="2e7c7" class="javax.swing.JButton" binding="annullaButton">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <opaque value="false"/>
+          <requestFocusEnabled value="false"/>
+          <text value="Annulla"/>
+          <visible value="true"/>
+        </properties>
+      </component>
+      <component id="82408" class="javax.swing.JButton" binding="aggiungiButton">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Aggiungi"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

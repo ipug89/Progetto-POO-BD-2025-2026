@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.FatturaGUI">
+  <grid id="27dc6" binding="Fattura" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="25" left="25" bottom="25" right="25"/>
+    <constraints>
+      <xy x="20" y="20" width="600" height="550"/>
+    </constraints>
+    <properties>
+      <background color="-14869219"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="de597" binding="fatturaPanel" layout-manager="GridLayoutManager" row-count="12" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="20" vgap="14">
+        <margin top="15" left="15" bottom="15" right="15"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14869219"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d55f3" class="javax.swing.JLabel" binding="titolo">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="24" style="1"/>
+              <foreground color="-1601248"/>
+              <text value="⚡ RIEPILOGO PREVENTIVO"/>
+            </properties>
+          </component>
+          <component id="9560d" class="javax.swing.JLabel" binding="testoNome">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4473925"/>
+              <text value="Nome:"/>
+            </properties>
+          </component>
+          <component id="8929a" class="javax.swing.JLabel" binding="nomeRicevuto">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <component id="ffbe4" class="javax.swing.JLabel" binding="testoCognome">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4473925"/>
+              <text value="Cognome:"/>
+            </properties>
+          </component>
+          <component id="b4c7c" class="javax.swing.JLabel" binding="cognomeRicevuto">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <component id="571c9" class="javax.swing.JLabel" binding="testoCf">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4473925"/>
+              <text value="Codice Fiscale:"/>
+            </properties>
+          </component>
+          <component id="dfde9" class="javax.swing.JLabel" binding="codiceFricevuto">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <component id="d74c9" class="javax.swing.JLabel" binding="nPatenteTesto">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4473925"/>
+              <text value="Numero Patente:"/>
+            </properties>
+          </component>
+          <component id="d3af1" class="javax.swing.JLabel" binding="nPatenteRicevuto">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <component id="a0b33" class="javax.swing.JLabel" binding="nGiorniTesto">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4473925"/>
+              <text value="Giorni Noleggio:"/>
+            </properties>
+          </component>
+          <component id="23b2d" class="javax.swing.JLabel" binding="ngiorniRicevuto">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <component id="ea5b0" class="javax.swing.JLabel" binding="marcaTesto">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4473925"/>
+              <text value="Marca Veicolo:"/>
+            </properties>
+          </component>
+          <component id="fb9f9" class="javax.swing.JLabel" binding="marcaRicevuta">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <component id="50c5b" class="javax.swing.JLabel" binding="modelloTesto">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4473925"/>
+              <text value="Modello:"/>
+            </properties>
+          </component>
+          <component id="33312" class="javax.swing.JLabel" binding="modelloRicevuto">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <component id="3388e" class="javax.swing.JLabel" binding="targaTesto">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4473925"/>
+              <text value="Targa:"/>
+            </properties>
+          </component>
+          <component id="2f5d3" class="javax.swing.JLabel" binding="targaRicevuta">
+            <constraints>
+              <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <vspacer id="separator">
+            <constraints>
+              <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="1" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="a5308" class="javax.swing.JLabel" binding="prezzotesto">
+            <constraints>
+              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font style="1"/>
+              <foreground color="-1"/>
+              <text value="CORRISPETTIVO TOTALE:"/>
+            </properties>
+          </component>
+          <component id="b583f" class="javax.swing.JLabel" binding="prezzoRicevuto">
+            <constraints>
+              <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="18" style="1"/>
+              <foreground color="-1601248"/>
+              <text value="- €"/>
+            </properties>
+          </component>
+          <component id="365f7" class="javax.swing.JButton" binding="tornaAllaHomeButton">
+            <constraints>
+              <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16777216"/>
+              <font style="1"/>
+              <foreground color="-16777216"/>
+              <opaque value="false"/>
+              <text value="Torna alla Home"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
