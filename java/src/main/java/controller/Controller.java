@@ -408,25 +408,36 @@ public class Controller {
     //METODO PER LA GESTIONE DEL CLIENTE
     public boolean gestisciCliente(Cliente clienteTemp) {
 
-
         // Creazione dell'istanza del DAO
         ClienteDAO clienteDAO = new ClienteImplementazionePostgresDAO();
-        // Invocazione al metodo per verificare l'esistenza della patente all'interno del DB
-        boolean esistePerPatente = clienteDAO.verificaPatenteDB(clienteTemp.getNumeroPatente());
 
-        // VERIFICA ESISTENZA PATENTE
-        if (esistePerPatente) {
-            // Se la patente esiste, stampa il messaggio e ritorna true
-            System.out.println("Cliente trovato nel DB tramite patente. Procedo con il noleggio.");
-            return true;
-        }
-        // Altrimenti avvia la registrazione
-        System.out.println("Cliente non trovato. Avvio registrazione...");
         try {
             // Chiamata al metodo per controllare i campi inseriti dell'utente
             controllaUtente(clienteTemp.getNome(), clienteTemp.getCognome(), clienteTemp.getCodiceFiscale(), clienteTemp.getEmail(), clienteTemp.getTelefono());
 
+            // Invocazione al metodo per verificare l'esistenza del cliente nel DB tramite Codice Fiscale
+            boolean esistePerCF = clienteDAO.verificaPatenteDB(clienteTemp.getCodiceFiscale());
             LocalDate dataScadenza = clienteTemp.getDataScadenzaPatente();
+
+            // VERIFICA ESISTENZA CLIENTE
+            if (esistePerCF) {
+                // Se il cliente esiste, stampa il messaggio e aggiorna i suoi dati
+                System.out.println("Cliente trovato nel DB tramite Codice Fiscale. Procedo con l'aggiornamento dei dati e il noleggio.");
+
+                return clienteDAO.aggiornaClienteDB(
+                        clienteTemp.getNumeroPatente(),
+                        dataScadenza,
+                        clienteTemp.getCategoriaPatente(),
+                        clienteTemp.getNome(),
+                        clienteTemp.getCognome(),
+                        clienteTemp.getCodiceFiscale(),
+                        clienteTemp.getEmail(),
+                        clienteTemp.getTelefono()
+                );
+            }
+
+            // Altrimenti avvia la registrazione
+            System.out.println("Cliente non trovato. Avvio registrazione...");
 
             // Registrazione del cliente sul DB
             return clienteDAO.registraClienteDB(
@@ -439,7 +450,7 @@ public class Controller {
                     clienteTemp.getEmail(),
                     clienteTemp.getTelefono()
             );
-        // GESTIONE ERRORI
+            // GESTIONE ERRORI
         } catch (FormatoNonValidoException ex) {
             System.err.println("Errore di validazione cliente: " + ex.getMessage());
             return false;

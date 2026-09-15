@@ -4,6 +4,7 @@ import controller.Controller;
 import exception.FormatoNonValidoException;
 import model.noleggio.Noleggio;
 import model.utenti.Cliente;
+import model.veicoli.Furgone;
 import model.veicoli.Veicolo;
 
 import java.time.LocalDate;
@@ -84,6 +85,16 @@ public class NoleggioGUI {
                     String email = campoEmailNoleggio.getText().trim();
                     String telefono = campoTelefonoNoleggio.getText().trim();
                     String categoria = tipoPatenteNoleggio.getSelectedItem() != null ? tipoPatenteNoleggio.getSelectedItem().toString() : "B";
+
+                    // Verifica che la patente inserita sia valida per il veicolo noleggiato
+                    if (veicoloSelezionato instanceof Furgone) {
+                        if (categoria.equalsIgnoreCase("Auto")) {
+                            JOptionPane.showMessageDialog(frameNoleggio,
+                                    "Attenzione: La categoria della patente inserita (" + categoria + ") non abilita alla guida di furgoni!",
+                                    "Categoria Patente Incompatibile", JOptionPane.ERROR_MESSAGE);
+                            return;
+                        }
+                    }
 
                     String dataInizioStr = campoDataInizio.getText().trim();
                     String dataFineStr = campoDataFinePrevista.getText().trim();
